@@ -23,5 +23,5 @@ function dltButton() {
     btnStart.style.display = "none";
     setTimeout(function() {
         document.getElementById('cover').style.display = "none";
-    }, 3000)
+    }, 3499)
 };
