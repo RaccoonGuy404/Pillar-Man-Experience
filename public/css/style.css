@@ -1,8 +1,11 @@
 /* Global */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 html, body {
     margin: 0 auto;
     height: 100%;
     background-color: ghostwhite;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* start cover and button */
@@ -18,16 +21,16 @@ html, body {
 }
 
 .slide {
-    animation: slideAway 3.5s forwards;
+    animation: slideAway 3.5s ease-out;
 }
 
 #start {
-    cursor: pointer;
+    color: ghostwhite;
+    background-color: #4287f5;
     border: none;
     padding: 15px 20px;
     border-radius: 10px;
-    background-color: #4287f5;
-    color: ghostwhite;
+    cursor: pointer;
     font-size: xx-large;
 }
 
@@ -42,8 +45,8 @@ html, body {
 #flex-container {
     width: auto;
     height: 99%;
-    display: flex;
     padding: 0 75px;
+    display: flex;
 
 }
 
@@ -52,17 +55,30 @@ html, body {
     height: 101%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0% 0% 3% 3%;
+    text-align: center;
 }
 
-.charBox > a {
-    display: block;
-    text-align: center;
+.charBox:hover > a {
+    color: ghostwhite;
     width: 100%;
-    height: 100%;
+    height: 58.3%;
+    padding-top: 70%;
+    display: block;
+    border-radius: 0% 0% 3% 3%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(253,187,45,0) 100%);
+    text-align: center;
+    text-decoration: none;
+    font-size: 4rem;
 }
 
 .charBox:not(:last-child) {
     margin-right: 15px;
+}
+
+.charBox > a {
+    display: none;
 }
 
 #wamuu {
